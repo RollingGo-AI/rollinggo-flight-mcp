@@ -25,4 +25,4 @@ def register_airport_search_tool(mcp: FastMCP) -> None:
             dict: 上游原始 JSON，包含 message 与 airPortInformationList。
         """
         api_key = extract_api_key()
-        return await request_api("POST", "/api/mcp/airportsearch", api_key, payload={"keyword": keyword})
+        return await request_api("POST", "/airportsearch", api_key, payload={"keyword": keyword})

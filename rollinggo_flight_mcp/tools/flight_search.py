@@ -71,4 +71,4 @@ def register_flight_search_tool(mcp: FastMCP) -> None:
             payload["toAirport"] = toAirport
 
         api_key = extract_api_key()
-        return await request_api("POST", "/api/mcp/flightsearch", api_key, payload=payload)
+        return await request_api("POST", "/flightsearch", api_key, payload=payload)

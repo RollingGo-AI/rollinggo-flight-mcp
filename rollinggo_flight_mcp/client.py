@@ -2,11 +2,11 @@ from typing import Any, Dict, Optional
 
 import httpx
 
-from .config import get_api_base_url
+from .config import get_api_base_url, get_api_prefix
 
 
 async def request_api(method: str, endpoint: str, api_key: str, payload: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
-    url = f"{get_api_base_url()}{endpoint}"
+    url = f"{get_api_base_url()}{get_api_prefix()}{endpoint}"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Accept": "application/json",
