@@ -1,5 +1,7 @@
 # RollingGo Flight MCP Server
 
+> 🌐 [English](README.en.md) | **中文**
+
 RollingGo 机票搜索 MCP Server。通过 FastMCP 为 AI Agent 和 MCP 客户端提供机场检索和航班查询能力。
 
 当前版本只暴露 2 个工具：
