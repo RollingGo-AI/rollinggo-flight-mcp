@@ -14,51 +14,35 @@
 
 RollingGo Flight Search MCP Server. Provides airport search and flight query capabilities for AI Agents and MCP clients via FastMCP.
 
-## Tools
+- Powered by the world’s 3rd largest travel B2B firm with global reach: partnered with over 500 airlines, covering 200+ countries and regions and more than 1,000 destinations worldwide.
+- Diverse flight options: millions of flight combinations to cater to varied travel needs, supporting direct flights, connecting flights and other itinerary types.
+- Competitive pricing: aggregated premium global airfare resources to deliver real-time fares with market advantages.
+- Reliable customer support: professional team providing round-the-clock 7×24 customer service.
 
-Currently exposes 2 tools:
+## Who is this for?
+Individual users requiring flight price tracking, hotel search and hotel price comparison
+Individuals and development teams building AI Agents
+Developers looking to integrate flight booking capabilities into MCP Clients
+Developers creating intelligent agents for travel planning, corporate travel management, OTA platforms and lifestyle services
+Product teams aiming to verify the end-to-end commercial transaction loop for AI Agents
 
-- `searchAirports` — Search airport/city info by English city name, English airport name, or IATA code.
-- `searchFlights` — Query flight options by date, route, passenger count, and cabin class.
 
-`checkFlightSeats` and `checkBaggageAllowance` are not yet implemented.
+##  Quick Start 🚀
 
-## Installation
+> 💡 In summary, you only need to do two things: apply for an API Key and configure it in your AI assistant. **No coding required** – any MCP-compliant AI assistant gains hotel search capabilities in 5 minutes with your first tool call.
 
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-```
+### Step 1: Get Your API Key
 
-## Configuration
+1. [Visit the Application Page](https://mcp.agentichotel.cn/apply)
+2. Fill in basic information – automatic approval within 1-3 minutes. You'll receive an email containing:
+   - API Key
+   - Partner Center account (login + initial password) to configure markups, view orders, and check earnings
+3. ⚠️ Check your email (including spam folder) for the API Key
+4. **Limited-Time Offer**: All developers who complete their first tool call within 3 days of receiving the API Key unlock **permanent unlimited free access**. We prioritize developers with real needs and execution speed, offering zero-cost access to complete hotel MCP capabilities.
 
-Default upstream API address:
+> The email includes both hotel and flight MCP endpoints – 1 key for both.
 
-```text
-https://mcp.rollinggo.cn
-```
-
-Override via environment variable:
-
-```bash
-set ROLLINGGO_API_BASE_URL=https://mcp.rollinggo.cn
-```
-
-The HTTP server reads the API Key from request headers. Pass one of the following:
-
-```http
-Authorization: Bearer <your_api_key>
-```
-
-or:
-
-```http
-X-Secret-Key: <your_api_key>
-```
-
-## 🚀 Quick Start
-
+### Step 2: Setup & Running
 ```bash
 python server.py
 ```
@@ -127,9 +111,52 @@ POST /api/mcp/flightsearch
 
 Field descriptions follow `rollinggo-readme/FLIGHT-README.md`.
 
+## Tools
+
+Currently exposes 2 tools:
+
+- `searchAirports` — Search airport/city info by English city name, English airport name, or IATA code.
+- `searchFlights` — Query flight options by date, route, passenger count, and cabin class.
+
+`checkFlightSeats` and `checkBaggageAllowance` are not yet implemented.
+
+## Installation
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Configuration
+
+Default upstream API address:
+
+```text
+https://mcp.rollinggo.cn
+```
+
+Override via environment variable:
+
+```bash
+set ROLLINGGO_API_BASE_URL=https://mcp.rollinggo.cn
+```
+
+The HTTP server reads the API Key from request headers. Pass one of the following:
+
+```http
+Authorization: Bearer <your_api_key>
+```
+
+or:
+
+```http
+X-Secret-Key: <your_api_key>
+```
+
 ---
 
-## 💬 Support
+## Support💬 
 
 Join our WeChat technical support group for assistance. Don't worry about any issues during integration – our core development team will be online throughout to help you with environment configuration, API debugging, and completing your first successful flight search query.
 
