@@ -1,4 +1,4 @@
-# RollingGo Flight MCP Server全球机票查询MCP
+# RollingGo Flight MCP 全球机票查询比价MCP
 
 [**中文**](#中文版本) | [**English**](README.en.md)
 
