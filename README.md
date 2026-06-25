@@ -8,7 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-🏠 [官网](https://rollinggo.store/) · 🚀 [快速开始](#快速开始) · 🔧 [工具](#tools) · 💬 [技术支持](#技术支持)
+🏠 [官网](https://rollinggo.store/) · 🚀 [快速开始](#快速开始) · 🔧 [工具](#tools) · 💬 [技术支持](#技术支持) 📚 [接入教程-视频版(0基础0代码可实操)](https://www.xiaohongshu.com/discovery/item/6a22affe0000000017029504?app_platform=ios&app_version=9.33.4&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBwWFsJ1iLP0QLjYWHV4RatLComUk4vekr3adma28ssMU=&author_share=1&xhsshare=CopyLink&shareRedId=NzxGN0RLSTo-O0pGTEwzOTszTkBGSUlM&apptime=1782376771&share_id=09ec1dc114174939916826fc8471d07a&code=051iMqFa1D1hXL08HNGa1Eq5Jb3iMqF7&state=wx_oauth)
+📚 [接入教程-文档版](https://rollinggo.store/docs/mcp-docs/quick-start)
 
 
 | 服务 | 端点 | 已上线 Tool | 认证 |
@@ -51,9 +52,20 @@
 - 判断航班或舱位是否可订
 - 构建航班推荐、比价、行程规划等 AI 工作流
 ---
+## 效果演示
+> "帮我设置机票价格监控"
 
+<table>
+  <tr>
+    <td><img height="400" alt="image" src="https://github.com/user-attachments/assets/39564221-304a-4afd-b468-f6dc6f5cac0c" /></td>
+    <td><img height="400" alt="image" src="https://github.com/user-attachments/assets/032d5e0f-2695-4db8-9825-f4d26bcbb82e" /></td>
+  </tr>
+</table>
 
-## Tools
+> Agent成功监测机票降价
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/e542e285-3d51-4ee6-a7e5-8b597d18bc77" />
+
 
 ## 🚀快速开始
 > 💡 总结来说，你只需要做两件事：申请API Key+ 在AI助手中一键配置，**无需编写代码**，就能让任何支持MCP的AI助手具备酒店搜索能力，5 分钟内完成第一次 MCP Tool 调用，
@@ -64,7 +76,6 @@
 3. 为什么需要填写信息申请 KEY？机票价格、库存涉及真实交易链路，因此我们需要为每个开发者开通专属的独立KEY。申请 KEY 时仅需填写少量信息，这样做主要是为了减少无效配置成本，保护接口稳定性，避免恶意调用或异常流量，在测试订单、价格查询、库存校验等问题上能及时联系到你。
 
 ### 第二步：在AI助手中配置
-
 > 推荐 Claude CLI、Codex、Cursor 三个客户端。其他支持 MCP 的客户端（如 Kiro、豆包等）配置方式类似。
 
 ### Claude CLI
